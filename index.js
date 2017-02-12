@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.full-height-header').height($(window).height());
+    $(window).resize(function(){
+        $('.full-height-header').height($(window).height());
+    });
+    $('.hamburger').click(function(){
+       $('.dropdown').toggleClass('dropdown-show');
+    });
+});
